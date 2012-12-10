@@ -1,0 +1,22 @@
+{application, mrabbit_tcp,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { mrabbit_tcp_app, []}},
+  {env, [
+			{tcp_listeners,[5672]},
+			{tcp_listen_options,
+              [binary,
+               {packet,raw},
+               {reuseaddr,true},
+               {backlog,128},
+               {nodelay,true},
+               {linger,{true,0}},
+               {exit_on_close,false}]}
+		]}
+ ]}.
