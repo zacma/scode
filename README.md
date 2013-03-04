@@ -1,10 +1,6 @@
-scode
-=====================
-share my code with you
-=====================
+This is the net part of rabbitmq, look http://www.rabbitmq.com/.
+very easy to understand ,you can run it like this:
 
-This is a net depart of rabbitmq, it's almost a raw packet,
-you can only run it like this :
 1 Enter the directory and run command: ./appctl live, 
-2 Connect some clients,
+2 Connect some clients like me(telnet ip port), then enter some words.
 That's all;
